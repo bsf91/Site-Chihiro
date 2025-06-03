@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #00103080;
+
+    &__icon {
+        margin-left: 5%;
+        height: 80px;
+        width: 80px;
+    }
+}
