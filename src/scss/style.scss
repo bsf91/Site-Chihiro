@@ -1,7 +1,13 @@
-@use "header";
-@use "hero";
-@use "content-control";
-@use "personagens";
+@use "./sections/header";
+@use "./sections/hero";
+@use "./sections/content-control";
+@use "./sections/personagens";
+@use "./sections/sinopse";
+@use "./sections/trailer";
+@use "./sections/informações";
+@use "./sections/footer";
+@use "mixins";
+@use "variaveis";
 
 * {
     margin: 0;
@@ -9,14 +15,31 @@
     box-sizing: border-box;
 }
 
-body {
-    color: #fff;
-    background-color: #001030;
-    background: url("../../src/img/hero-background.png") no-repeat center/cover;
+.linha-divisoria {
+    border: none;
+    height: 2px;
+    background-color: variaveis.$corTextos;
+    margin: 40px auto;
+    width: 90%;
 }
 
-.personagens {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 20px;
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../img/hero-background2.PNG) no-repeat center center;
+    background-size: cover;
+    background-color: variaveis.$corDeFundo;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: contain;
+        background-position: center top;
+    }
 }

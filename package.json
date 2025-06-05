@@ -6,7 +6,8 @@
     "scripts": {
         "optimize:images": "imagemin src/images/* --out-dir=dist/images",
         "sass": "sass src/scss/style.scss dist/css/style.min.css --style=compressed",
-        "build": "npm run sass && node copiar.js",
+        "build": "npm run sass && node copiar.js && npm run build:js",
+        "build:js": "uglifyjs src/script/main.js -o dist/script/main.min.js -c -m",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
@@ -26,7 +27,8 @@
         "gulp-sourcemaps": "^3.0.0",
         "imagemin-cli": "^8.0.0",
         "prettier": "^3.5.3",
-        "sass": "^1.89.0"
+        "sass": "^1.89.0",
+        "uglify-js": "^3.19.3"
     },
     "dependencies": {
         "acorn": "^6.4.2",

@@ -1,0 +1,63 @@
+@use "../mixins";
+@use "../variaveis";
+
+.informacoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+
+    &__conteudo {
+        display: block;
+        margin-top: 130px;
+        height: 25%;
+    }
+
+    &__image {
+        width: 50%;
+        height: 100%;
+    }
+
+    &__title {
+        width: 100%;
+        @include mixins.titulo;
+    }
+
+    &__list {
+        margin-top: 50px;
+        &__item {
+            @include mixins.texto(24px);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .informacoes {
+        display: block;
+        margin-top: 50px;
+
+        &__conteudo {
+            margin-top: 30px;
+            height: auto;
+            padding: 0 15px;
+            text-align: center;
+        }
+
+        &__image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+
+        &__title {
+            font-size: 2rem; // reduzido para mobile
+        }
+
+        &__list {
+            margin-top: 30px;
+
+            &__item {
+                font-size: 1.125rem; // reduzido para mobile
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+@use "../mixins";
+@use "../variaveis";
+
+.footer {
+    margin-top: 50px;
+    @include mixins.texto(24px);
+}

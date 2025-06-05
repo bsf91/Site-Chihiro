@@ -1,0 +1,13 @@
+@use "variaveis";
+
+@mixin titulo($size: 44px) {
+    font-size: $size;
+    font-family: "Bona Nova SC", serif;
+    color: variaveis.$corTitulos;
+}
+
+@mixin texto($size: 14px, $color: variaveis.$corTextos) {
+    font-size: $size;
+    font-family: "merienda", cursive;
+    color: $color;
+}

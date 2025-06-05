@@ -1,103 +1,315 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Viagem De Chihiro</title>
-    <link rel="stylesheet" href="dist/css/style.min.css" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>A Viagem De Chihiro</title>
+        <link rel="stylesheet" href="dist/css/style.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=award_star"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap"
+            rel="stylesheet"
+        />
+    </head>
 
-
-</head>
-<body>
-    <header class="header">
-        <img class="header__icon" src="./src/img/No-face-icon.webp" alt="">
-        <nav class="header__menu">
-            <ul>
-                <li>
-                    <button></button>
-                    <li>
-                    <button></button>
-                </li>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <div class="content-control">
+    <body>
+        <header class="header">
+            <img
+                class="header__icon"
+                src="./src/img/No-face-icon.webp"
+                alt=""
+            />
+            <nav class="header__menu">
+                <ul class="header__menu__list">
+                    <li class="header__menu__list__item">
+                        <button>Loja</button>
+                    </li>
+                    <li class="header__menu__list__item">
+                        <button>Minha conta</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
         <section class="hero">
-            <h2 class="hero__title">A Viagem de Chihiro</h2>
-            <p class="hero__description">Explore a história de Chihiro, uma garota corajosa em uma jornada inesquecível.</p>
-            <a href="https://youtu.be/ByXuk9QqQkk?si=TOmRDNzI9Ddmz4ud" class="hero__btn btn">Assista ao Trailer</a>
-        </section>
-        <section class="sinopse">
-            <img src="https://placehold.co/200x200" alt="">
-            <h3>Titulo sinopse</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis consequuntur ratione inventore ex ipsum saepe repellendus dolores eaque soluta, praesentium optio numquam modi amet deleniti dicta, magnam, quae commodi. Aliquid.</p>
-        </section>
-        <section class="personagens">
-            <div class="personagens__card">
-                <img src="https://placehold.co/100x100" alt="">
-                <h4 class="personagens__card-title">Personagem</h4>
-                
-                <button class="personagens__card-btn" type="button">Sobre o personagem</button>
-                
-                <p class="personagens__card-description">Descrição do personagem</p>
-            </div>
-            <div class="personagens__card">
-                <img src="https://placehold.co/100x100" alt="">
-                <h4 class="personagens__card-title">Personagem</h4>
-                
-                <button class="personagens__card-btn" type="button">Sobre o personagem</button>
-                
-                <p class="personagens__card-description">Descrição do personagem</p>
-            </div>
-            <div class="personagens__card">
-                <img src="https://placehold.co/100x100" alt="">
-                <h4 class="personagens__card-title">Personagem</h4>
-                
-                <button class="personagens__card-btn" type="button">Sobre o personagem</button>
-                
-                <p class="personagens__card-description">Descrição do personagem</p>
-            </div>
-            <div class="personagens__card">
-                <img src="https://placehold.co/100x100" alt="">
-                <h4 class="personagens__card-title">Personagem</h4>
-                
-                <button class="personagens__card-btn" type="button">Sobre o personagem</button>
-                
-                <p class="personagens__card-description">Descrição do personagem</p>
-            </div>
-            <div class="personagens__card">
-                <img src="https://placehold.co/100x100" alt="">
-                <h4 class="personagens__card-title">Personagem</h4>
-                
-                <button class="personagens__card-btn" type="button">Sobre o personagem</button>
-                
-                <p class="personagens__card-description">Descrição do personagem</p>
-            </div>
-            <div class="personagens__card">
-                <img src="https://placehold.co/100x100" alt="">
-                <h4 class="personagens__card-title">Personagem</h4>
-                
-                <button class="personagens__card-btn" type="button">Sobre o personagem</button>
-                
-                <p class="personagens__card-description">Descrição do personagem</p>
-            </div>
-        </section>
-        <section class="trailer">
-            <h3>Assista ao trailer oficial</h3>
-        </section>
-        <section class="informacoes">
-            <h3>Informações</h3>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+            <h1 class="hero__title">A Viagem de Chihiro</h1>
+            <p class="hero__description">
+                Embarque com Chihiro em uma história de coragem, humildade e
+                amor, repleta de magia e aventura.
+            </p>
+            <h2 class="hero__subtitle">Vencedora de prêmios:</h2>
+            <ul class="hero__awards">
+                <li class="hero__awards__item">
+                    <span class="material-symbols-outlined">award_star</span> -
+                    Oscar de Melhor Filme de Animação
+                </li>
+                <li class="hero__awards__item">
+                    <span class="material-symbols-outlined">award_star</span> -
+                    Urso de Ouro
+                </li>
+                <li class="hero__awards__item">
+                    <span class="material-symbols-outlined">award_star</span> -
+                    Critics' Choice Award: Melhor Filme de Animação
+                </li>
+                <li class="hero__awards__item">
+                    <span class="material-symbols-outlined">award_star</span> -
+                    Japan Academy Prize: Melhor Filme
+                </li>
             </ul>
+            <a href="#trailer" class="hero__btn">Assista ao Trailer</a>
         </section>
-        <footer class="footer">
-            <p>© 2025 Viagem de Chihiro | Página criada como exercício</p>
-        </footer>
-    </div>
-</body>
+        <div class="content-control">
+            <section class="sinopse">
+                <img src="./src/img/chihiro-sinopse.jpg" alt="" />
+                <div class="sinopse__container">
+                    <h3 class="sinopse__title">Sinopse</h3>
+                    <p class="sinopse__text">
+                        Chihiro é uma garota de 10 anos que acredita que todo o
+                        universo deve atender aos seus caprichos. Ao descobrir
+                        que vai se mudar, ela fica furiosa. Na viagem, Chihiro
+                        percebe que seu pai se perdeu no caminho para a nova
+                        cidade, indo parar defronte um túnel aparentemente sem
+                        fim, guardado por uma estranha estátua. Curiosos, os
+                        pais de Chihiro decidem entrar no túnel e Chihiro vai
+                        com eles. Chegam numa cidade sem nenhum habitante e os
+                        pais de Chihiro decidem comer a comida de uma das casas,
+                        enquanto a menina passeia. Ela encontra com Haku, garoto
+                        que lhe diz para ir embora o mais rápido possível e ao
+                        reencontrar seus pais, Chihiro fica surpresa ao ver que
+                        eles se transformaram em gigantescos porcos. É o início
+                        da jornada de Chihiro por um mundo fantasma, povoado por
+                        seres fantásticos, no qual humanos não são bem-vindos.
+                    </p>
+                </div>
+            </section>
+            <hr class="linha-divisoria" />
+            <section class="personagens">
+                <h2 class="personagens__title">Conheça os personagens</h2>
+                <div class="personagens__card">
+                    <img
+                        class="personagens__card__img"
+                        src="./src/img/chihiro.jpg"
+                        alt=""
+                    />
+                    <h4 class="personagens__card__name">Chihiro</h4>
+
+                    <button class="personagens__card__btn" type="button">
+                        Sobre o personagem
+                    </button>
+
+                    <p class="personagens__card__description">
+                        Chihiro é a protagonista do filme A Viagem de Chihiro
+                        (2001), do Studio Ghibli. No início da história, ela é
+                        uma menina de 10 anos, insegura, teimosa e assustada com
+                        a mudança para uma nova cidade. Porém, ao entrar em um
+                        mundo mágico para resgatar seus pais transformados em
+                        porcos, Chihiro embarca numa jornada de crescimento. Com
+                        coragem, empatia e determinação, ela amadurece, aprende
+                        a enfrentar desafios sozinha e descobre sua força
+                        interior.
+                    </p>
+                </div>
+                <div class="personagens__card">
+                    <img
+                        class="personagens__card__img"
+                        src="./src/img/haku.jpg"
+                        alt=""
+                    />
+                    <h4 class="personagens__card__name">Haku</h4>
+
+                    <button class="personagens__card__btn" type="button">
+                        Sobre o personagem
+                    </button>
+
+                    <p class="personagens__card__description">
+                        Haku aparece pela primeira vez quando Chihiro está na
+                        ponte para a casa de banhos . Nisso, ele rapidamente diz
+                        a ela para sair da cidade e voltar para o outro lado do
+                        rio antes do anoitecer. Mas quando Chihiro não consegue
+                        fazer isso, ela foge em pânico. Haku então vai
+                        procurá-la e quando Chihiro percebe que ela está se
+                        tornando invisível, ele lhe dá algo para comer para que
+                        ela não desapareça. Haku então a desamarra quando suas
+                        pernas ficam presas e a leva para a casa de banhos.
+                        Então, ele a ajuda a atravessar a ponte e no jardim dos
+                        fundos, ele diz a ela que ela precisa conseguir um
+                        emprego para sobreviver de Kamajī , o homem da caldeira.
+                    </p>
+                </div>
+                <div class="personagens__card">
+                    <img
+                        class="personagens__card__img"
+                        src="./src/img/zeniba.webp"
+                        alt=""
+                    />
+                    <h4 class="personagens__card__name">Zeniba</h4>
+
+                    <button class="personagens__card__btn" type="button">
+                        Sobre o personagem
+                    </button>
+
+                    <p class="personagens__card__description">
+                        Quando ela aparece pela primeira vez, na segunda metade
+                        do filme, ela parece ser tão perigosa quanto sua irmã,
+                        sendo consistente com a palavra de Kamaji de que ela é
+                        "assustadora". Depois de causar estragos no escritório
+                        de Yubaba, ela avisa Chihiro Ogino para ficar quieta
+                        sobre o incidente ou ela arrancará sua boca. Quando
+                        Chihiro se recusa a entregar Haku e o selo dourado , ela
+                        a informa que Haku é uma ladra gananciosa que precisa
+                        ser punida, e que ela lançou uma maldição sobre o selo
+                        dourado para que quem o roubasse morresse. Quando
+                        Chihiro visita sua casa no Fundo do Pântano com
+                        Sem-Rosto , Boh e Yu-Bird para devolver o selo dourado e
+                        se desculpar em nome de Haku, sua verdadeira natureza é
+                        revelada: uma senhora gentil e prestativa. Ela dá
+                        conselhos encorajadores a Chihiro sobre como se lembrar
+                        do nome de Haku e, mais tarde, perdoa Haku pelo roubo de
+                        seu selo. Ela parece formar um vínculo com Chihiro,
+                        visto quando Chihiro se refere a Zeniba como "Vovó" a
+                        seu pedido. Zeniba também se tornou patrona de
+                        Sem-Rosto.
+                    </p>
+                </div>
+                <div class="personagens__card">
+                    <img
+                        class="personagens__card__img"
+                        src="./src/img/yubaba.webp"
+                        alt=""
+                    />
+                    <h4 class="personagens__card__name">Yubaba</h4>
+
+                    <button class="personagens__card__btn" type="button">
+                        Sobre o personagem
+                    </button>
+
+                    <p class="personagens__card__description">
+                        Como a principal vilã do filme, Yubaba tem uma
+                        personalidade extremamente autoritária e intimidadora.
+                        Como muitos outros funcionários de sua infame casa de
+                        banhos, Yubaba é obcecada por ouro e demonstra estar
+                        disposta a ver o ouro como prioridade em detrimento de
+                        sua própria família (especialmente Zeniba, por quem
+                        expressa ódio). No entanto, ela demonstra grande carinho
+                        maternal por seu filho, Boh, e fica completamente
+                        devastada quando este afirma que "não gostará mais dela"
+                        se ela continuar a tratar Chihiro Ogino injustamente no
+                        final do filme. Embora seus atributos sejam vistos como
+                        incrivelmente antagônicos, Yubaba demonstrou (em algumas
+                        ocasiões) diversas qualidades redentoras, como sua
+                        disposição em elogiar Chihiro após seu excelente
+                        trabalho ajudando o Espírito do Rio Sem Nome e sua
+                        doçura maternal com seu filho, Boh. No fim das contas,
+                        ela simplesmente coloca o ouro acima da maioria das
+                        coisas, fazendo com que os outros discordem dela devido
+                        às suas diferentes mentalidades.
+                    </p>
+                </div>
+                <div class="personagens__card">
+                    <img
+                        class="personagens__card__img"
+                        src="./src/img/kamaji.png"
+                        alt=""
+                    />
+                    <h4 class="personagens__card__name">Kamaji</h4>
+
+                    <button class="personagens__card__btn" type="button">
+                        Sobre o personagem
+                    </button>
+
+                    <p class="personagens__card__description">
+                        No início, ele é hostil com Chihiro ; não está disposto
+                        a lhe dar trabalho. Quando um humano não trabalha em
+                        Yūya, ele se torna um animal (por exemplo, um porco como
+                        os pais de Chihiro). Após alguma persuasão, ele ajuda
+                        Chihiro a trabalhar na Casa de Banhos e até finge ser
+                        seu avô quando questionado por Lin para protegê-la,
+                        embora essa farsa não dure muito.
+                    </p>
+                </div>
+                <div class="personagens__card">
+                    <img
+                        class="personagens__card__img"
+                        src="./src/img/boh-e-yuhbird.jpg"
+                        alt=""
+                    />
+                    <h4 class="personagens__card__name">Boh e Yu-bird</h4>
+
+                    <button class="personagens__card__btn" type="button">
+                        Sobre o personagem
+                    </button>
+
+                    <p class="personagens__card__description">
+                        Boh aparece pela primeira vez quando Chihiro Ogino tenta
+                        conseguir um emprego na casa de banhos , enquanto
+                        Chihiro discute com Yubaba. Boh acorda com a confusão,
+                        começa a chorar e arromba a porta que leva do seu quarto
+                        ao escritório de Yubaba. Depois que Boh arromba a porta,
+                        Yubaba dá o emprego a Chihiro, já que a discussão entre
+                        eles foi o que fez Boh acordar e ter um ataque de raiva.
+                        <br />
+                        Yu-Bird fez sua primeira aparição quando foi vista
+                        voando sobre a Casa de Banhos logo após o primeiro
+                        anoitecer no filme. Ela parece apresentar algumas das
+                        características de Yubaba; seus rostos são semelhantes
+                        em formato e feições. Mais tarde no filme, Yu-Bird se
+                        transforma em uma criatura muito pequena, parecida com
+                        um corvo, semelhante a uma mosca, após Zeniba fazer sua
+                        primeira aparição para Chihiro, Boh e Haku.
+                    </p>
+                </div>
+            </section>
+            <hr class="linha-divisoria" />
+            <section id="trailer" class="trailer">
+                <h3>Assista ao trailer oficial</h3>
+                <div class="trailer__container">
+                    <iframe
+                        class="trailer__player"
+                        src="https://www.youtube.com/embed/ByXuk9QqQkk?si=YozZfun4_HLoDroM"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </section>
+            <hr class="linha-divisoria" />
+            <section class="informacoes">
+                <div class="informacoes__conteudo">
+                    <h3 class="informacoes__title">Informações</h3>
+                    <ul class="informacoes__list">
+                        <li class="informacoes__list__item">Duração:</li>
+                        <li class="informacoes__list__item">Ano: 2001</li>
+                        <li class="informacoes__list__item">
+                            Diretor: Hayo Miyazaki
+                        </li>
+                        <li class="informacoes__list__item">
+                            Produtora: Studio Ghibli
+                        </li>
+                    </ul>
+                </div>
+                <img
+                    src="./src/img/Chihiro-haku.png"
+                    alt=""
+                    class="informacoes__image"
+                />
+            </section>
+            <footer class="footer">
+                <p>© 2025 Viagem de Chihiro | Página criada como exercício</p>
+            </footer>
+        </div>
+
+        <script src="./dist/script/main.min.js"></script>
+    </body>
 </html>
