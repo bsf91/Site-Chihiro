@@ -31,3 +31,4 @@ function monitorar() {
 
 // Exporta as tasks para rodar em série e paralelamente:
 export default series(parallel(compilaSass, minifyHtml), monitorar);
+export { minifyHtml };
