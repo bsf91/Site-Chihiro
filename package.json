@@ -4,10 +4,11 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "prepare:dist": "node prebuild.cjs",
         "optimize:images": "imagemin src/images/* --out-dir=dist/images",
         "sass": "sass src/scss/style.scss dist/css/style.min.css --style=compressed",
-        "build": "npm run sass && node copiar.js && npm run build:js",
         "build:js": "uglifyjs src/script/main.js -o dist/script/main.min.js -c -m",
+        "build": "npm run prepare:dist && npm run sass && node copiar.js && npm run build:js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
