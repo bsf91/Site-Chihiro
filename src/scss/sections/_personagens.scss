@@ -37,6 +37,7 @@
         }
 
         &__btn {
+            @include mixins.titulo(22px);
             margin: 10px 5px;
             padding: 15px;
             cursor: pointer;
@@ -71,6 +72,7 @@
             }
 
             &__btn {
+                @include mixins.titulo(12px);
                 margin: 10px 15px;
                 padding: 12px;
             }
