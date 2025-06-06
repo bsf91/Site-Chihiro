@@ -19,6 +19,7 @@
     }
 
     &__player {
+        border: solid 2px variaveis.$corDetalhes;
         border-radius: 6px;
         width: 100%;
         height: 100%;
