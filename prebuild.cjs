@@ -6,7 +6,7 @@ const folders = [
     path.join(__dirname, "dist"),
     path.join(__dirname, "dist/css"),
     path.join(__dirname, "dist/script"),
-    path.join(__dirname, "dist/images"),
+    path.join(__dirname, "dist/img"),
 ];
 
 folders.forEach((folder) => {

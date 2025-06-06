@@ -35,7 +35,6 @@
         height: 80px;
         width: 80px;
         cursor: pointer;
-        // Garante visibilidade em todos os estados
         opacity: 1;
         visibility: visible;
         display: block;
@@ -44,21 +43,18 @@
             visibility 0.3s ease;
     }
 
-    // Header recolhido (scroll passou da sinopse)
     &.header--scrolled {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        position: fixed; /* fixa o header no topo */
+        position: fixed;
         top: 0;
         left: 0;
         right: 0;
         z-index: 1000;
-
         background-color: transparent;
 
         .header__icon {
-            // Garante que o ícone continue visível mesmo após o scroll
             opacity: 1;
             visibility: visible;
             display: block;
@@ -72,7 +68,6 @@
         }
     }
 
-    // Menu expandido após clique
     &.header--scrolled.header--menu-open {
         flex-direction: column;
         align-items: flex-start;
@@ -106,5 +101,40 @@
 @media (max-width: 768px) {
     .header {
         margin-top: 115px;
+        position: relative;
+
+        &__menu {
+            margin-right: 10px;
+
+            &__list {
+                &__item {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        button {
+            align-self: flex-end;
+        }
+
+        &__icon {
+            margin-left: 10px;
+            width: 60px; // <- novo tamanho
+            height: 60px; // <- novo tamanho
+        }
+
+        &.header--scrolled {
+            margin-top: 0; // <- evita espaço extra
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            & .header__icon {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                margin: 0;
+            }
+        }
     }
 }
