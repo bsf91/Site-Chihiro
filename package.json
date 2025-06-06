@@ -6,7 +6,7 @@
     "scripts": {
         "html": "gulp minifyHtml",
         "prepare:dist": "node prebuild.cjs",
-        "optimize:images": "imagemin src/images/* --out-dir=dist/images",
+        "optimize:images": "imagemin src/img/* --out-dir=dist/img",
         "sass": "sass src/scss/style.scss dist/css/style.min.css --style=compressed",
         "build:js": "uglifyjs src/script/main.js -o dist/script/main.min.js -c -m",
         "build": "npm run prepare:dist && npm run sass && node copiar.js && npm run build:js && npm run html",
