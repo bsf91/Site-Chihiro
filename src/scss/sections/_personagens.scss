@@ -37,7 +37,7 @@
         }
 
         &__btn {
-            @include mixins.titulo(22px);
+            @include mixins.titulo(22px, variaveis.$corDeFundo);
             margin: 10px 5px;
             padding: 15px;
             cursor: pointer;
