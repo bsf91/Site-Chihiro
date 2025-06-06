@@ -37,7 +37,7 @@
         }
 
         &__btn {
-            @include mixins.titulo(22px, variaveis.$corDeFundo);
+            @include mixins.titulo(22px, variaveis.$corDetalhes);
             margin: 10px 5px;
             padding: 15px;
             cursor: pointer;
@@ -72,7 +72,7 @@
             }
 
             &__btn {
-                @include mixins.titulo(12px, variaveis.$corDetalhes);
+                @include mixins.titulo(18px, variaveis.$corDetalhes);
                 margin: 10px 15px;
                 padding: 12px;
             }
