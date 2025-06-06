@@ -5,3 +5,9 @@
     margin-top: 50px;
     @include mixins.texto(24px);
 }
+
+@media (max-width: 768px) {
+    .footer {
+        @include mixins.texto(12px);
+    }
+}

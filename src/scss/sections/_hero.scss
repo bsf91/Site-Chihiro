@@ -116,7 +116,7 @@
         }
 
         &__awards {
-            @include mixins.texto(14px);
+            @include mixins.texto(12px);
             grid-column: auto;
             grid-row: auto;
             margin-left: 0;
